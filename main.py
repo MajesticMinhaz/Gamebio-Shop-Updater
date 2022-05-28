@@ -11,7 +11,7 @@ from dotenv import dotenv_values
 async def fixed_json_data() -> dict:
     async with aiohttp.ClientSession() as session:
         async with session.get(
-                url="https://raw.githubusercontent.com/mdminhaz2003/Shop-Updater/master/data.json",
+                url="https://raw.githubusercontent.com/mdminhaz2003/Gamebio-Shop-Updater/master/shop_all_data.json",
                 allow_redirects=False
         ) as json_data:
             data = await json_data.text()
